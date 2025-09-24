@@ -1,0 +1,11 @@
+ /* Footer */
+    footer {
+      background: #111;
+      text-align: center;
+      padding: 2rem;
+      margin-top: 2rem;
+    }
+    footer p { margin-bottom: 1rem; }
+    footer a { color: hsl(50, 97%, 46%); transition: 0.3s; align-content: center;}
+    footer a:hover { color: hsl(50, 97%, 46%); }
+    footer img { width: 100px; height: 80px; }

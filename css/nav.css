@@ -18,3 +18,4 @@ nav {
     nav .social-icons { display: flex; gap: 1rem; }
     nav .social-icons a { color: #f2f2f2; font-size: 1.2rem; transition: 0.3s; }
     nav .social-icons a:hover { color: hsl(50, 97%, 46%); }
+    

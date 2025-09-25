@@ -57,7 +57,7 @@
     }
     .route-card img { width: 100%; }
     .route-card .content { padding: 1rem; }
-    .route-card .content h3 { background: hsl(50, 97%, 46%); margin-bottom: 0.5rem; }
+    .route-card .content h3 { background:  #0d0d0d; margin-bottom: 0.5rem; }
     .route-card .content p { font-size: 0.95rem; margin-bottom: 1rem; }
     .route-card .content a {
       display: inline-block;
@@ -100,6 +100,11 @@
     .news-card .content a:hover { background: hsl(50, 97%, 46%); }
 
     /* Contacto */
+    .contact {
+      justify-items: center;
+    }
+
+
     .contact form {
       max-width: 600px;
       margin: 0 auto;

@@ -47,7 +47,14 @@
     .about p { max-width: 800px; text-align: center; }
 
     /* Rutas */
-    .routes { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; opacity:0; transform: translateY(50px); transition: 1s ease; }
+    .routes { 
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+      opacity:0;
+      transform: translateY(50px);
+      transition: 1s ease;
+    }
     .route-card {
       background: #1a1a1a;
       border: 1px solid #333;
@@ -55,6 +62,7 @@
       overflow: hidden;
       transition: 0.3s;
     }
+  
     .route-card img { width: 100%; }
     .route-card .content { padding: 1rem; }
     .route-card .content h3 { background:  #0d0d0d; margin-bottom: 0.5rem; }
@@ -75,6 +83,54 @@
     .gallery img { border-radius: 5px; transition: 0.3s; cursor: pointer; }
     .gallery img:hover { transform: scale(1.05); }
 
+    .gallery-container {
+      position: relative; /* Para posicionar las flechas absolutas */
+      width: 80%;
+      overflow: hidden; /* Oculta el overflow de la galería principal */
+      margin: 0 auto;
+    } 
+
+    .gallery-wrapper {
+      display: flex; /* Alinea las imágenes en línea */
+      overflow-x: auto; /* Habilita el scroll horizontal */
+      overflow-y: hidden; /* Oculta la barra de scroll vertical */
+      scroll-behavior: smooth; /* Suaviza el scroll */
+      -ms-overflow-style: none;  /* IE y Edge */
+      scrollbar-width: none;  /* Firefox */
+    }
+
+    .gallery-wrapper::-webkit-scrollbar {
+      display: none; /* Oculta la barra de scroll en Chrome, Safari y Opera */
+    }
+
+    .gallery-wrapper img {
+      width: 250px; /* Ajusta el ancho de la imagen */
+      height: 250px;
+      margin-right: 10px; /* Espacio entre imágenes */
+    }
+
+    .scroll-left,
+    .scroll-right {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      z-index: 10; /* Asegura que estén por encima de las imágenes */
+      padding: 10px;
+      background-color: rgba(0, 0, 0, 0.5);
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+
+    .scroll-left {
+      left: 10px;
+    }
+
+    .scroll-right {
+      right: 10px;
+    }
+
+
     /* Noticias */
     .news { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; opacity:0; transform: translateY(50px); transition: 1s ease; }
     .news-card {
@@ -84,7 +140,12 @@
       overflow: hidden;
       transition: 0.3s;
     }
-    .news-card img { width: 100%; }
+    .news-card img { 
+      
+      width: fit-content;
+      height: 50%; 
+    
+    }
     .news-card .content { padding: 1rem; }
     .news-card .content h3 { color: hsl(50, 97%, 46%); margin-bottom: 0.5rem; }
     .news-card .content p { font-size: 0.95rem; margin-bottom: 1rem; }

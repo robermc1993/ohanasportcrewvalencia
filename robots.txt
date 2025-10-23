@@ -1,0 +1,31 @@
+User-agent: *
+Disallow: /wp-admin/
+Disallow: /cgi-bin/
+Disallow: /private/
+Disallow: /tmp/
+Allow: /
+
+# Sitemap location
+Sitemap: https://ohanasportcrewvlc.es/sitemap.xml
+
+# SEO recommendation
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+# Evita indexar archivos duplicados o estáticos
+Disallow: /*.php$
+Disallow: /*.cgi$
+Disallow: /*.tmp$
+Disallow: /*?*
+
+# Mantén acceso a imágenes y CSS/JS
+Allow: /*.css$
+Allow: /*.js$
+Allow: /*.jpg$
+Allow: /*.jpeg$
+Allow: /*.png$
+Allow: /*.webp$
+Allow: /*.svg$

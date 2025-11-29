@@ -97,6 +97,7 @@
       scroll-behavior: smooth; /* Suaviza el scroll */
       -ms-overflow-style: none;  /* IE y Edge */
       scrollbar-width: none;  /* Firefox */
+      object-fit: contain;
     }
 
     .gallery-wrapper::-webkit-scrollbar {

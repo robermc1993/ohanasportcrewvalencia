@@ -102,10 +102,18 @@ nav.navbar {
   }
 
   .social-icons {
-    width: 100%;
+    width: 20%;
     justify-content: center;
     margin-top: 15px;
     flex-wrap: wrap;
     text-align: center;
+  }
+
+  .galeria img {
+    width: 100%;
+    height: auto;
+  }
+  nav ul {
+    flex-direction: column;
   }
 }

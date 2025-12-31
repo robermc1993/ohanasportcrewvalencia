@@ -194,12 +194,4 @@
     }
     .contact button:hover { background: hsl(50, 97%, 46%); }
 
-    @media (max-width: 768px) {
-  .galeria img {
-    width: 100%;
-    height: auto;
-  }
-  nav ul {
-    flex-direction: column;
-  }
-}
+  
